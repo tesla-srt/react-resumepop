@@ -1,7 +1,11 @@
+# To-Do
+
 - Profile Picture
-- Responive nav bar logo
-- Scrollspy Animations
 - Contact Form
-- Fill in content
-- Newsletter
+- Contact Form to Discord WebHook
+- Sample Cards
+- ~~Responive nav bar logo~~
+- Scrollspy Animations
+- ~~Fill in content~~
+- Newsletter?
 - ...
