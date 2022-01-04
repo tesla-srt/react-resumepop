@@ -1,6 +1,4 @@
 import React, { Component } from "react";
-//import {TransformMotion } from "react-motion";
-//import logo from "../logo.svg";
 
 export default class Footer extends Component {
 
