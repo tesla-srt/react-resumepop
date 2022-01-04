@@ -1,0 +1,7 @@
+- Profile Picture
+- Responive nav bar logo
+- Scrollspy Animations
+- Contact Form
+- Fill in content
+- Newsletter
+- ...
