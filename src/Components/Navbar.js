@@ -28,7 +28,7 @@ export default class Navbar extends Component {
                 isDynamic={true}
                 smooth={true}
                 offset={-70}
-                duration={500}
+                duration={250}
               >
                 Home
               </Link>
@@ -41,9 +41,9 @@ export default class Navbar extends Component {
                 isDynamic={true}
                 smooth={true}
                 offset={-70}
-                duration={500}
+                duration={250}
               >
-                Services
+                About
               </Link>
             </li>
             <li className="nav-item">
@@ -54,7 +54,7 @@ export default class Navbar extends Component {
                 isDynamic={true}
                 smooth={true}
                 offset={-70}
-                duration={500}
+                duration={250}
               >
                 Samples
               </Link>
@@ -67,20 +67,7 @@ export default class Navbar extends Component {
                 isDynamic={true}
                 smooth={true}
                 offset={-70}
-                duration={500}
-              >
-                About
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link
-                activeClass="active"
-                to="section5"
-                spy={true}
-                isDynamic={true}
-                smooth={true}
-                offset={-51}
-                duration={500}
+                duration={250}
               >
                 Contact
               </Link>

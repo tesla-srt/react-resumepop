@@ -18,8 +18,8 @@ export default class Home extends Component {
   render() {
     return (
       <Section dark={false} id="section1">
-        <h1 className="display-3"> Welcome to ResumePop! </h1>
-        <p className="lead">
+        <h1 className="display-3 fromLeft"> Welcome to ResumePop! </h1>
+        <p className="lead mb-3 mt-3">
           Applying for jobs shouldn’t be difficult, because what is a resume and
           cover letter but a short written story that defines you. Think of it
           this way. You’re applying for a job. Your cover letter is the story of
