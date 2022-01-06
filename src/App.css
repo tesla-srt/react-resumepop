@@ -1,16 +1,17 @@
 :root {
   --off-white: #fafafa;
 }
-h1 {
+h1.fromLeft {
   display: inline-block !important;
 }
 
-h1:after {
+h1.fromLeft:after {
   display: block;
   content: "";
   border-bottom: solid 3px #212529;
   transform: scaleX(0);
   transition: transform 250ms ease-in-out;
+  transform-origin: 0% 50%;
 }
 
 *::-moz-selection {
@@ -30,9 +31,6 @@ h1:hover:after {
 }
 h1.fromRight:after {
   transform-origin: 100% 50%;
-}
-h1.fromLeft:after {
-  transform-origin: 0% 50%;
 }
 
 a {
@@ -151,9 +149,71 @@ a {
 #pic:hover {
   animation: pop 0.3s linear 1;
 }
+
+.form-check input:checked + label {
+  font-weight: 500;
+}
+
+
+.form-check-input:checked {
+  background-color: green !important ;
+}
+
+.checkmark__circle {
+  stroke-dasharray: 166;
+  stroke-dashoffset: 166;
+  stroke-width: 2;
+  stroke-miterlimit: 10;
+  stroke: #7ac142;
+  fill: none;
+  animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
+}
+
+.checkmark {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: block;
+  stroke-width: 2;
+  stroke: #fff;
+  stroke-miterlimit: 10;
+  margin: 1% auto;
+  box-shadow: inset 0px 0px 0px #7ac142;
+  animation: fill 0.4s ease-in-out 0.4s forwards,
+    scale 0.3s ease-in-out 0.9s both;
+}
+
+.checkmark__check {
+  transform-origin: 50% 50%;
+  stroke-dasharray: 48;
+  stroke-dashoffset: 48;
+  animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
+}
+
 /**************
   Keyframes
 ***************/
+
+@keyframes stroke {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes scale {
+  0%,
+  100% {
+    transform: none;
+  }
+  50% {
+    transform: scale3d(1.1, 1.1, 1);
+  }
+}
+@keyframes fill {
+  100% {
+    box-shadow: inset 0px 0px 0px 30px #7ac142;
+  }
+}
+
 @keyframes pop {
   50% {
     transform: scale(1.1);

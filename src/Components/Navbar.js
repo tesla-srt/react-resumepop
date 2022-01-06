@@ -19,7 +19,7 @@ export default class Navbar extends Component {
             path="https://cdn.glitch.me/dad08474-c765-4bb4-a862-08c6e5f18652/resumepop.min.svg?v=1640497676415"
             onClick={this.scrollToTop}
           ></SvgLoader>
-          <ul className="nav-items">
+          <ul className="nav-items">  
             <li className="nav-item">
               <Link
                 activeClass="active"

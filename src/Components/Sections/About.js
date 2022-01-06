@@ -1,9 +1,6 @@
 import React, { Component } from "react";
-import { useSpring, Trail, animated } from "react-spring";
 import Form from "react-bootstrap/Form";
 import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
 import { Section } from "../Section";
 const profilepic = process.env.PROF_PIC;
