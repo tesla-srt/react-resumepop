@@ -11,8 +11,17 @@ import ModalDialog from "react-bootstrap/ModalDialog";
 import ModalTitle from "react-bootstrap/ModalTitle";
 import { Section } from "../Section";
 
+//const Node = require("node");
+//const Discord = require("discord.js");
+//import Discord from "discord.js";
+
 export const Contact = () => {
   const [thanks, setThanks] = useState(false);
+
+  /*const Webhook = new Discord.WebhookClient(
+    "928473790369898576",
+    "v86BmtamkckYKBwieOnhw83jOmxrvI51xtY3KdKWPLFHYv7o0tmOWkv67BdZHdKzDqZy"
+  );*/
 
   const {
     register,
@@ -46,6 +55,7 @@ export const Contact = () => {
       embeds: [myEmbed],
     };
 
+    /*
     const request = new XMLHttpRequest();
     request.open(
       "POST",
@@ -53,13 +63,11 @@ export const Contact = () => {
     );
 
     request.setRequestHeader("Content-type", "application/json");
-    request.setRequestHeader(
-       "Access-Control-Allow-Origin", "*"
-    );
-
+    request.setRequestHeader("Access-Control-Allow-Origin", "*");
+*/
     const params = {
       headers: {
-        "Accept": "application/json",
+        Accept: "application/json",
         "Access-Control-Allow-Origin": "*",
       },
       username: "My Webhook Name",
@@ -67,7 +75,11 @@ export const Contact = () => {
       content: "The message to send",
     };
 
-    request.send(JSON.stringify(params));
+    /* request.send(JSON.stringify(params)); 
+    Webhook.send("Hello world")
+      .then(() => console.log("Message sent!"))
+      .catch((e) => console.log("Failed to send message!", e.message));*/
+
     setThanks(true);
 
     console.log(JSON.stringify(msg));
