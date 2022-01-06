@@ -3,7 +3,7 @@ import "./App.css";
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
 import Home from "./Components/Sections/Home";
-import Contact from "./Components/Sections/Contact";
+import { Contact } from "./Components/Sections/Contact";
 import About from "./Components/Sections/About";
 import Samples from "./Components/Sections/Samples";
 import { Section } from "./Components/Section";
