@@ -7,8 +7,6 @@ import { Contact } from "./Components/Sections/Contact";
 import About from "./Components/Sections/About";
 import Samples from "./Components/Sections/Samples";
 import { Section } from "./Components/Section";
-import dummyText from "./DummyText";
-
 
 class App extends Component {
   render() {
