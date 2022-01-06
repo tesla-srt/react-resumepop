@@ -13,16 +13,19 @@ import { Section } from "../Section";
 
 export const Contact = () => {
   const [thanks, setThanks] = useState(false);
+
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm();
+
   const onSubmit = (data) => {
     console.log(data);
 
     var estimate =
       (data.UpdateCV ? 15 : 0) + (data.NewCV ? 25 : 0) + (data.Cover ? 25 : 0);
+
     var myEmbed = {
       author: {
         name: data.name,
@@ -42,38 +45,49 @@ export const Contact = () => {
       username: "contact-hook",
       embeds: [myEmbed],
     };
-    {
-      /*
+
     const request = new XMLHttpRequest();
     request.open(
       "POST",
-      "https://discord.com/api/webhooks/928473790369898576/v86BmtamkckYKBwieOnhw83jOmxrvI51xtY3KdKWPLFHYv7o0tmOWkv67BdZHdKzDqZy"
+      "https://thingproxy.freeboard.io/fetch/https://discord.com/api/webhooks/928473790369898576/v86BmtamkckYKBwieOnhw83jOmxrvI51xtY3KdKWPLFHYv7o0tmOWkv67BdZHdKzDqZy"
     );
 
     request.setRequestHeader("Content-type", "application/json");
+    request.setRequestHeader(
+      "Origin",
+      "https://olive-available-magnolia.glitch.me"
+    );
 
     const params = {
+      headers: {
+        Accept: "application/json",
+        Origin: "https://olive-available-magnolia.glitch.me",
+      },
       username: "My Webhook Name",
       avatar_url: "",
       content: "The message to send",
     };
 
     request.send(JSON.stringify(params));
-    setThanks(true); */
-    }
-    
-    console.log(JSON.stringify(msg));
+    setThanks(true);
 
+    console.log(JSON.stringify(msg));
+    /*
     fetch(
-      "https://discord.com/api/webhooks/928473790369898576/v86BmtamkckYKBwieOnhw83jOmxrvI51xtY3KdKWPLFHYv7o0tmOWkv67BdZHdKzDqZy",
+      "https://thingproxy.freeboard.io/fetch/https://discord.com/api/webhooks/928473790369898576/v86BmtamkckYKBwieOnhw83jOmxrvI51xtY3KdKWPLFHYv7o0tmOWkv67BdZHdKzDqZy",
       {
         method: "POST",
         body: JSON.stringify(msg),
-        headers: { "Content-Type": "application/json","X-Requested-With": "me11233245" },
+        headers: {
+          "Content-Type": "application/json",
+          "Access-Control-Allow-Origin": "*",
+        },
       }
     ).then((res) => {
       setThanks(true);
     });
+    
+*/
   };
 
   function hexToDecimal(hex) {
