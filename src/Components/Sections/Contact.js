@@ -54,14 +54,13 @@ export const Contact = () => {
 
     request.setRequestHeader("Content-type", "application/json");
     request.setRequestHeader(
-      "Origin",
-      "https://olive-available-magnolia.glitch.me"
+       "Access-Control-Allow-Origin", "*"
     );
 
     const params = {
       headers: {
-        Accept: "application/json",
-        Origin: "https://olive-available-magnolia.glitch.me",
+        "Accept": "application/json",
+        "Access-Control-Allow-Origin": "*",
       },
       username: "My Webhook Name",
       avatar_url: "",
