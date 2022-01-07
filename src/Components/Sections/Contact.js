@@ -29,9 +29,9 @@ export const Contact = () => {
 
     var myEmbed = {
       author: {
-        name: data.name,
+        name: "New Contact",
       },
-      title: data.email,
+      title: data.name,
       description:
         "" +
         (data.UpdateCV ? "Update Resume, " : "") +
@@ -39,6 +39,10 @@ export const Contact = () => {
         (data.Cover ? "Cover Letter, " : "") +
         "",
       fields: [
+        {
+          name: "Email",
+          value: data.email,
+        },
         {
           name: "Phone",
           value: data.mobilephone,
@@ -52,7 +56,7 @@ export const Contact = () => {
     };
 
     var msg = {
-      username: "New-Contact",
+      username: "ResumePop",
       embeds: [myEmbed],
     };
 
