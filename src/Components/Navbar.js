@@ -3,11 +3,12 @@ import React, { Component } from "react";
 //import logo from "../logo.svg";
 import { Link, animateScroll as scroll } from "react-scroll";
 
-const scrollToTop = () => {
-  scroll.scrollToTop();
-};
-
 export default class Navbar extends Component {
+  
+  scrollToTop = () => {
+    scroll.scrollToTop();
+  };
+
   render() {
     return (
       <nav className="nav" id="navbar">
