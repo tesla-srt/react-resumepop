@@ -163,6 +163,11 @@ a {
   border-color: #5865f2 !important;
 }
 
+.formError {
+  color: red;
+  font-weight: light;
+}
+
 .checkmark__circle {
   stroke-dasharray: 166;
   stroke-dashoffset: 166;
