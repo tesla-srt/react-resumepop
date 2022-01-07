@@ -42,10 +42,13 @@ export const Contact = () => {
         {
           name: "Phone",
           value: data.mobilephone,
-        },
+        }, 
+        {
+          name: "Estimate",
+          value: "Estimate: $" + estimate
+        }
       ],
       color: hexToDecimal("#ff0000"),
-      footer: { text: "Estimate: $" + estimate },
     };
 
     var msg = {
