@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-//import Discord from "discord.js";
+import Discord from "discord.js";
 import "./App.css";
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
