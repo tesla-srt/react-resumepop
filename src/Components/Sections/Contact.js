@@ -29,9 +29,9 @@ export const Contact = () => {
 
     var myEmbed = {
       author: {
-        name: "New-Contact",
+        name: new Date(),
       },
-      title: "",
+      title: data.email,
       description:
         "" +
         (data.UpdateCV ? "Update Resume, " : "") +
