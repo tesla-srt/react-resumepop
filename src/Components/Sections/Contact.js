@@ -38,23 +38,19 @@ export const Contact = () => {
         (data.NewCV ? "New Resume, " : "") +
         (data.Cover ? "Cover Letter, " : "") +
         "",
+      fields: [
+        {
+          name: "Phone",
+          value: data.mobilephone,
+        },
+      ],
       color: hexToDecimal("#ff0000"),
       footer: { text: "Estimate: $" + estimate },
     };
 
     var msg = {
-      username: "contact-hook",
+      username: "New-Contact",
       embeds: [myEmbed],
-    };
-
-    const params = {
-      headers: {
-        Accept: "application/json",
-        "Access-Control-Allow-Origin": "*",
-      },
-      username: "My Webhook Name",
-      avatar_url: "",
-      content: "The message to send",
     };
 
     const Webhook = new Discord.WebhookClient(
@@ -62,27 +58,8 @@ export const Contact = () => {
       "cqnBNPzQk4RXTr7KFyl1acWCKBynlV3BBPDB0-nn1dHcOSohqCV-MVVx4_NIK6YuohlP"
     );
     Webhook.send(msg)
-      .then(() => console.log("Message sent!"))
+      .then(() => setThanks(true))
       .catch((e) => console.log("Failed to send message!", e.message));
-    setThanks(true);
-
-    console.log(JSON.stringify(msg));
-    /*
-    fetch(
-      "https://thingproxy.freeboard.io/fetch/https://discord.com/api/webhooks/928473790369898576/v86BmtamkckYKBwieOnhw83jOmxrvI51xtY3KdKWPLFHYv7o0tmOWkv67BdZHdKzDqZy",
-      {
-        method: "POST",
-        body: JSON.stringify(msg),
-        headers: {
-          "Content-Type": "application/json",
-          "Access-Control-Allow-Origin": "*",
-        },
-      }
-    ).then((res) => {
-      setThanks(true);
-    });
-    
-*/
   };
 
   function hexToDecimal(hex) {
@@ -196,7 +173,7 @@ export const Contact = () => {
                     type="tel"
                     className="m-2"
                     placeholder="Mobile number"
-                    {...register("Mobile number", {
+                    {...register("mobilephone", {
                       required: false,
                       minLength: 6,
                       maxLength: 12,
