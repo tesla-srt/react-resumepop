@@ -154,14 +154,13 @@ a {
   font-weight: 500;
 }
 
-
 .form-check-input:checked {
   background-color: green !important ;
 }
 
 .btn-discord {
-  background-color: #5865F2;
-  border-color: #5865F2;
+  background-color: #5865f2 !important;
+  border-color: #5865f2 !important;
 }
 
 .checkmark__circle {
