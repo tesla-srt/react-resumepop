@@ -47,20 +47,9 @@ export const Contact = () => {
       embeds: [myEmbed],
     };
 
-    const request = new XMLHttpRequest();
-    request.open(
-      "POST",
-      "https://thingproxy.freeboard.io/fetch/https://discord.com/api/webhooks/928473790369898576/v86BmtamkckYKBwieOnhw83jOmxrvI51xtY3KdKWPLFHYv7o0tmOWkv67BdZHdKzDqZy"
-    );
-
-    request.setRequestHeader("Content-type", "application/json");
-    request.setRequestHeader(
-       "Access-Control-Allow-Origin", "*"
-    );
-
     const params = {
       headers: {
-        "Accept": "application/json",
+        Accept: "application/json",
         "Access-Control-Allow-Origin": "*",
       },
       username: "My Webhook Name",
@@ -68,7 +57,13 @@ export const Contact = () => {
       content: "The message to send",
     };
 
-    request.send(JSON.stringify(params));
+    const Webhook = new Discord.WebhookClient(
+      "928974137563684884",
+      "cqnBNPzQk4RXTr7KFyl1acWCKBynlV3BBPDB0-nn1dHcOSohqCV-MVVx4_NIK6YuohlP"
+    );
+    Webhook.send(msg)
+      .then(() => console.log("Message sent!"))
+      .catch((e) => console.log("Failed to send message!", e.message));
     setThanks(true);
 
     console.log(JSON.stringify(msg));
@@ -119,8 +114,8 @@ export const Contact = () => {
           </svg>
           <h1 className="display-3 mb-5">Thank You!</h1>
           <p className="fs-4 mb-3">
-            I've recieved your request for consultation and will get back to you
-            by email as soon as possible.
+            Your message has been sent, I will get back to you by email or phone
+            as soon as possible.
           </p>
           <p className="fs-5 text-muted">
             For faster support, feel free to join my Discord
