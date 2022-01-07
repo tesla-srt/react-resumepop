@@ -9,7 +9,7 @@ import Col from "react-bootstrap/Col";
 import Modal from "react-bootstrap/Modal";
 import ModalDialog from "react-bootstrap/ModalDialog";
 import ModalTitle from "react-bootstrap/ModalTitle";
-import Discord, { Message } from "discord.js";
+
 import { Section } from "../Section";
 
 export const Contact = () => {
