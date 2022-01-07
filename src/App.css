@@ -159,6 +159,11 @@ a {
   background-color: green !important ;
 }
 
+.btn-discord {
+  background-color: #5865F2;
+  border-color: #5865F2;
+}
+
 .checkmark__circle {
   stroke-dasharray: 166;
   stroke-dashoffset: 166;
