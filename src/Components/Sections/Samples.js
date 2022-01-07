@@ -12,69 +12,70 @@ export default class Samples extends Component {
     return (
       <Section dark={false} id="section3">
         <h1 className="fromLeft">Samples</h1>
+        <p>
+          Click on any of the links below to see work I've done for my clients.
+        </p>
         <CardGroup className="mb-5 mt-5">
+          <Card>
+            <Card.Img variant="top" src="holder.js/100px180?auto=yes" />
+            <Card.Body>
+              <Placeholder as={Card.Title} animation="glow">
+                <Placeholder xs={6} />
+              </Placeholder>
+              <Placeholder as={Card.Text} animation="glow">
+                <Placeholder xs={7} /> <Placeholder xs={4} />
+                <Placeholder xs={4} /> <Placeholder xs={6} />
+                <Placeholder xs={8} />
+              </Placeholder>
+              <Placeholder.Button variant="primary" xs={6} />
+            </Card.Body>
+          </Card>
 
-              <Card>
-                <Card.Img variant="top" src="holder.js/100px180?auto=yes" />
-                <Card.Body>
-                  <Placeholder as={Card.Title} animation="glow">
-                    <Placeholder xs={6} />
-                  </Placeholder>
-                  <Placeholder as={Card.Text} animation="glow">
-                    <Placeholder xs={7} /> <Placeholder xs={4} />
-                    <Placeholder xs={4} /> <Placeholder xs={6} />
-                    <Placeholder xs={8} />
-                  </Placeholder>
-                  <Placeholder.Button variant="primary" xs={6} />
-                </Card.Body>
-              </Card>
+          <Card>
+            <Card.Img variant="top" src="holder.js/100px180?auto=yes" />
+            <Card.Body>
+              <Placeholder as={Card.Title} animation="glow">
+                <Placeholder xs={6} />
+              </Placeholder>
+              <Placeholder as={Card.Text} animation="glow">
+                <Placeholder xs={7} /> <Placeholder xs={4} />
+                <Placeholder xs={4} /> <Placeholder xs={6} />
+                <Placeholder xs={8} />
+              </Placeholder>
+              <Placeholder.Button variant="primary" xs={6} />
+            </Card.Body>
+          </Card>
 
-              <Card>
-                <Card.Img variant="top" src="holder.js/100px180?auto=yes" />
-                <Card.Body>
-                  <Placeholder as={Card.Title} animation="glow">
-                    <Placeholder xs={6} />
-                  </Placeholder>
-                  <Placeholder as={Card.Text} animation="glow">
-                    <Placeholder xs={7} /> <Placeholder xs={4} />
-                    <Placeholder xs={4} /> <Placeholder xs={6} />
-                    <Placeholder xs={8} />
-                  </Placeholder>
-                  <Placeholder.Button variant="primary" xs={6} />
-                </Card.Body>
-              </Card>
+          <Card>
+            <Card.Img variant="top" src="holder.js/100px180?auto=yes" />
+            <Card.Body>
+              <Placeholder as={Card.Title} animation="glow">
+                <Placeholder xs={6} />
+              </Placeholder>
+              <Placeholder as={Card.Text} animation="glow">
+                <Placeholder xs={7} /> <Placeholder xs={4} />
+                <Placeholder xs={4} /> <Placeholder xs={6} />
+                <Placeholder xs={8} />
+              </Placeholder>
+              <Placeholder.Button variant="primary" xs={6} />
+            </Card.Body>
+          </Card>
 
-              <Card>
-                <Card.Img variant="top" src="holder.js/100px180?auto=yes" />
-                <Card.Body>
-                  <Placeholder as={Card.Title} animation="glow">
-                    <Placeholder xs={6} />
-                  </Placeholder>
-                  <Placeholder as={Card.Text} animation="glow">
-                    <Placeholder xs={7} /> <Placeholder xs={4} />
-                    <Placeholder xs={4} /> <Placeholder xs={6} />
-                    <Placeholder xs={8} />
-                  </Placeholder>
-                  <Placeholder.Button variant="primary" xs={6} />
-                </Card.Body>
-              </Card>
-
-              <Card>
-                <Card.Img variant="top" src="holder.js/100px180?auto=yes" />
-                <Card.Body>
-                  <Placeholder as={Card.Title} animation="glow">
-                    <Placeholder xs={6} />
-                  </Placeholder>
-                  <Placeholder as={Card.Text} animation="glow">
-                    <Placeholder xs={7} /> <Placeholder xs={4} />
-                    <Placeholder xs={4} /> <Placeholder xs={6} />
-                    <Placeholder xs={8} />
-                  </Placeholder>
-                  <Placeholder.Button variant="primary" xs={6} />
-                </Card.Body>
-              </Card>
-              </CardGroup>
-    
+          <Card>
+            <Card.Img variant="top" src="holder.js/100px180?auto=yes" />
+            <Card.Body>
+              <Placeholder as={Card.Title} animation="glow">
+                <Placeholder xs={6} />
+              </Placeholder>
+              <Placeholder as={Card.Text} animation="glow">
+                <Placeholder xs={7} /> <Placeholder xs={4} />
+                <Placeholder xs={4} /> <Placeholder xs={6} />
+                <Placeholder xs={8} />
+              </Placeholder>
+              <Placeholder.Button variant="primary" xs={6} />
+            </Card.Body>
+          </Card>
+        </CardGroup>
       </Section>
     );
   }

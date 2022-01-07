@@ -7,6 +7,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Modal from "react-bootstrap/Modal";
+import Stack from "react-bootstrap/Stack";
 import ModalDialog from "react-bootstrap/ModalDialog";
 import ModalTitle from "react-bootstrap/ModalTitle";
 
@@ -29,7 +30,7 @@ export const Contact = () => {
 
     var myEmbed = {
       author: {
-        name: new Date(),
+        name: data.name,
       },
       title: data.email,
       description:
@@ -37,6 +38,7 @@ export const Contact = () => {
         (data.UpdateCV ? "Update Resume, " : "") +
         (data.NewCV ? "New Resume, " : "") +
         (data.Cover ? "Cover Letter, " : "") +
+        (data.consult ? "Free Consultation, " : "") +
         "",
       fields: [
         {
@@ -80,6 +82,116 @@ export const Contact = () => {
 
   return (
     <>
+      <Section dark={true} id="section4">
+        <h1 className="fromLeft">Contact</h1>
+        <p className="lead">
+          To set up a consultation or inquire about a service, please fill out
+          the form below.
+        </p>
+        <Container>
+          <Form onSubmit={handleSubmit(onSubmit)}>
+            <Row md={2} lg={2}>
+              <Col>
+                <Form.Group>
+                  <Stack gap={2}>
+                    <Form.Check
+                      type="checkbox"
+                      className="fs-5"
+                      placeholder="UpdateCV"
+                      label="Update Resume"
+                      {...register("UpdateCV", {})}
+                    />
+                    <Form.Check
+                      type="checkbox"
+                      className="fs-5"
+                      label="New Resume"
+                      placeholder="NewCV"
+                      {...register("NewCV", {})}
+                    />
+                    <Form.Check
+                      type="checkbox"
+                      className="fs-5"
+                      label="Cover Letter"
+                      placeholder="Cover"
+                      {...register("Cover", {})}
+                    />
+                    <Form.Check
+                      type="checkbox"
+                      className="fs-5"
+                      label="Free Consultation"
+                      placeholder="consult"
+                      {...register("Cover", {})}
+                    />
+                  </Stack>
+                </Form.Group>
+              </Col>
+              <Col className="">
+                <Form.Group>
+                  <Stack gap={2}>
+                    <Form.Control
+                      type="text"
+                      className=""
+                      placeholder="Name"
+                      {...register("name", {
+                        required: true,
+                        maxLength: 80,
+                      })}
+                    />
+
+                    <span className="formError">
+                      {errors.name && "Name is required"}
+                    </span>
+
+                    <Form.Control
+                      type="text"
+                      className=""
+                      placeholder="Email"
+                      {...register("email", {
+                        required: true,
+                        pattern: /^\S+@\S+$/i,
+                      })}
+                    />
+
+                    <span className="formError">
+                      {errors.email && "Email is required"}
+                    </span>
+
+                    <Form.Control
+                      type="tel"
+                      className=""
+                      placeholder="Mobile number"
+                      {...register("mobilephone", {
+                        required: false,
+                        minLength: 6,
+                        maxLength: 12,
+                      })}
+                    />
+
+                    <Form.Check
+                      type="checkbox"
+                      className="fs-5"
+                      label="I am not a robot"
+                      {...register("robot", { required: true })}
+                    />
+                    <span className="formError">
+                      {errors.robot && "*required"}
+                    </span>
+
+                    <Button
+                      variant="light"
+                      className=""
+                      size="lg"
+                      type="submit"
+                    >
+                      Submit
+                    </Button>
+                  </Stack>
+                </Form.Group>
+              </Col>
+            </Row>
+          </Form>
+        </Container>
+      </Section>
       <Modal show={thanks} fullscreen={true} onHide={() => setThanks(false)}>
         <Modal.Header closeButton></Modal.Header>
         <Modal.Body className="text-center">
@@ -118,94 +230,6 @@ export const Contact = () => {
           </a>
         </Modal.Body>
       </Modal>
-
-      <Section dark={true} id="section4">
-        <h1 className="fromLeft">Contact</h1>
-        <p className="lead">
-          To set up a consultation or inquire about a service, please fill out
-          the form below.
-        </p>
-        <Container>
-          <Form onSubmit={handleSubmit(onSubmit)}>
-            <Row md={2} lg={2}>
-              <Col>
-                <Form.Group>
-                  <Form.Check
-                    type="checkbox"
-                    className="p-2 fs-5"
-                    placeholder="UpdateCV"
-                    label="$15 - Update Resume"
-                    {...register("UpdateCV", {})}
-                  />
-                  <Form.Check
-                    type="checkbox"
-                    className="p-2 fs-5"
-                    label="$25 - New Resume"
-                    placeholder="NewCV"
-                    {...register("NewCV", {})}
-                  />
-                  <Form.Check
-                    type="checkbox"
-                    className="p-2 fs-5"
-                    label="$25 - Cover Letter"
-                    placeholder="Cover"
-                    {...register("Cover", {})}
-                  />
-                </Form.Group>
-              </Col>
-              <Col className="d-grid gap-2">
-                <Form.Group>
-                  <Form.Control
-                    type="text"
-                    className="m-2"
-                    placeholder="Name"
-                    {...register("name", {
-                      required: true,
-                      maxLength: 80,
-                    })}
-                  />
-                  <Form.Control.Feedback>
-                    {errors.name && "Name is required"}
-                  </Form.Control.Feedback>
-
-                  <Form.Control
-                    type="text"
-                    className="m-2"
-                    placeholder="Email"
-                    {...register("email", {
-                      required: true,
-                      pattern: /^\S+@\S+$/i,
-                    })}
-                  />
-                  <Form.Control.Feedback>
-                    {errors.email && "Email is required"}
-                  </Form.Control.Feedback>
-
-                  <Form.Control
-                    type="tel"
-                    className="m-2"
-                    placeholder="Mobile number"
-                    {...register("mobilephone", {
-                      required: false,
-                      minLength: 6,
-                      maxLength: 12,
-                    })}
-                  />
-
-                  <Button
-                    variant="success"
-                    className="m-2"
-                    size="lg"
-                    type="submit"
-                  >
-                    Submit
-                  </Button>
-                </Form.Group>
-              </Col>
-            </Row>
-          </Form>
-        </Container>
-      </Section>
     </>
   );
 };
