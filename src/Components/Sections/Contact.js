@@ -29,9 +29,9 @@ export const Contact = () => {
 
     var myEmbed = {
       author: {
-        name: "New Contact",
+        name: "New-Contact",
       },
-      title: data.name,
+      title: "",
       description:
         "" +
         (data.UpdateCV ? "Update Resume, " : "") +
@@ -40,17 +40,21 @@ export const Contact = () => {
         "",
       fields: [
         {
+          name: "Name",
+          value: data.name,
+        },
+        {
           name: "Email",
           value: data.email,
         },
         {
           name: "Phone",
           value: data.mobilephone,
-        }, 
+        },
         {
           name: "Estimate",
-          value: "Estimate: $" + estimate
-        }
+          value: "Estimate: $" + estimate,
+        },
       ],
       color: hexToDecimal("#ff0000"),
     };
