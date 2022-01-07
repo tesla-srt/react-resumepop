@@ -38,7 +38,7 @@ export const Contact = () => {
         (data.UpdateCV ? "Update Resume, " : "") +
         (data.NewCV ? "New Resume, " : "") +
         (data.Cover ? "Cover Letter, " : "") +
-        (data.consult ? "Free Consultation, " : "") +
+        (data.Consult ? "Free Consultation, " : "") +
         "",
       fields: [
         {
@@ -119,8 +119,8 @@ export const Contact = () => {
                       type="checkbox"
                       className="fs-5"
                       label="Free Consultation"
-                      placeholder="consult"
-                      {...register("Cover", {})}
+                      placeholder="Consult"
+                      {...register("Consult", {})}
                     />
                   </Stack>
                 </Form.Group>
