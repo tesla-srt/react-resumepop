@@ -110,7 +110,7 @@ export const Contact = () => {
             For faster support, feel free to join my Discord
           </p>
           <a
-            className="btn btn-primary"
+            className="btn btn-primary btn-discord"
             target="_blank"
             href="https://docs.google.com/document/d/1zHXyD09gqOJT4G8v8TJ8Rajb_k9slHqAy81g1EO9atc/view?usp=sharing"
           >
