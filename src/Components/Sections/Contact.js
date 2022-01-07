@@ -57,6 +57,7 @@ export const Contact = () => {
         },
       ],
       color: hexToDecimal("#ff0000"),
+      timestamp: new Date(),
     };
 
     var msg = {
