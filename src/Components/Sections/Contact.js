@@ -224,7 +224,7 @@ export const Contact = () => {
           <a
             className="btn btn-primary btn-discord"
             target="_blank"
-            href="https://docs.google.com/document/d/1zHXyD09gqOJT4G8v8TJ8Rajb_k9slHqAy81g1EO9atc/view?usp=sharing"
+            href="https://discord.gg/wKchFsxdNe"
           >
             Discord ☺
           </a>
