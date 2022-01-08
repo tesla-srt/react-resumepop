@@ -17,7 +17,6 @@ export default class About extends Component {
             className="col-md-6 float-md-end order-sm-1 mb-3 ms-md-3 border border-3 border-light"
             id="pic"
           />
-          <Container className="">
             <p className="text-break">Hi there, I’m Renee-Elise.</p>
 
             <p className="text-break">
@@ -46,7 +45,6 @@ export default class About extends Component {
               And if you’re still curious about me, have a look at my resume
               below.
             </p>
-          </Container>
         </div>
 
         <a
