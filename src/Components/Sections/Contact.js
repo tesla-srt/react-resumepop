@@ -68,8 +68,8 @@ export const Contact = () => {
     };
 
     const Webhook = new Discord.WebhookClient(
-      "928974137563684884",
-      "cqnBNPzQk4RXTr7KFyl1acWCKBynlV3BBPDB0-nn1dHcOSohqCV-MVVx4_NIK6YuohlP"
+      process.env.WEBHOOK_ID,
+      process.env.WEBHOOK_KEY
     );
     Webhook.send(msg)
       .then(() => setThanks(true))
