@@ -17,34 +17,34 @@ export default class About extends Component {
             className="col-md-6 float-md-end order-sm-1 mb-3 ms-md-3 border border-3 border-light"
             id="pic"
           />
-            <p className="text-break">Hi there, I’m Renee-Elise.</p>
+          <p className="text-break">Hi there, I’m Renee-Elise.</p>
 
-            <p className="text-break">
-              My passion has always been about helping others achieve positive
-              changes in their life. In recent years, I’ve spent my free time
-              helping friends and family discover how they can apply their
-              skills and interests into the workforce. I’ve helped others write
-              their resumes and cover letters, find and apply to jobs, and
-              prepare for interviews.
-            </p>
+          <p className="text-break">
+            My passion has always been about helping others achieve positive
+            changes in their life. In recent years, I’ve spent my free time
+            helping friends and family discover how they can apply their skills
+            and interests into the workforce. I’ve helped others write their
+            resumes and cover letters, find and apply to jobs, and prepare for
+            interviews.
+          </p>
 
-            <p className="text-break">
-              I received my Bachelor of Arts from the City College of New York.
-              While a student there, I volunteered as an academic writing tutor.
-              After graduating, I became a Certified Paralegal and a Certified
-              TEFL Instructor.
-            </p>
+          <p className="text-break">
+            I received my Bachelor of Arts from the City College of New York.
+            While a student there, I volunteered as an academic writing tutor.
+            After graduating, I became a Certified Paralegal and a Certified
+            TEFL Instructor.
+          </p>
 
-            <p className="text-break">
-              I believe in the power of words to manifest positive changes. I
-              created ResumePop to help you make your resume pop and land your
-              next job!
-            </p>
+          <p className="text-break">
+            I believe in the power of words to manifest positive changes. I
+            created ResumePop to help you make your resume pop and land your
+            next job!
+          </p>
 
-            <p className="text-break">
-              And if you’re still curious about me, have a look at my resume
-              below.
-            </p>
+          <p className="text-break">
+            And if you’re still curious about me, have a look at my resume
+            below.
+          </p>
         </div>
 
         <a
