@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 //import {TransformMotion } from "react-motion";
 //import logo from "../logo.svg";
-//import { ReactSVG } from "react-svg";
+import { ReactSVG } from "react-svg";
 import { Link, animateScroll as scroll } from "react-scroll";
 
 export default class Navbar extends Component {
@@ -13,7 +13,7 @@ export default class Navbar extends Component {
     return (
       <nav className="nav" id="navbar">
         <div className="nav-content">
-          <img
+          <ReactSVG
             className="nav-logo"
             src="https://cdn.glitch.me/dad08474-c765-4bb4-a862-08c6e5f18652/resumepop.min.svg?v=1640497676415"
             onClick={this.scrollToTop}
