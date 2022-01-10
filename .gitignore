@@ -9,6 +9,11 @@
 # production
 /build
 
+# Default ignored files
+/workspace.xml
+/.idea
+
+
 # misc
 .DS_Store
 .env.local
