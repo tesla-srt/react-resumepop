@@ -11,7 +11,7 @@ export default class Navbar extends Component {
     return (
       <nav className="nav" id="navbar">
         <div className="nav-content">
-          <Logo className="nav-logo img-fluid" />
+          <Logo className="nav-logo img-fluid" onClick={this.scrollToTop} />
           <ul className="nav-items">
             <li className="nav-item">
               <Link
@@ -21,7 +21,7 @@ export default class Navbar extends Component {
                 isDynamic={true}
                 smooth={true}
                 offset={-70}
-                duration={250}
+                duration={150}
               >
                 Home
               </Link>
@@ -34,7 +34,7 @@ export default class Navbar extends Component {
                 isDynamic={true}
                 smooth={true}
                 offset={-70}
-                duration={250}
+                duration={150}
               >
                 About
               </Link>
@@ -47,7 +47,7 @@ export default class Navbar extends Component {
                 isDynamic={true}
                 smooth={true}
                 offset={-70}
-                duration={250}
+                duration={150}
               >
                 Samples
               </Link>
@@ -60,7 +60,7 @@ export default class Navbar extends Component {
                 isDynamic={true}
                 smooth={true}
                 offset={-70}
-                duration={250}
+                duration={150}
               >
                 Contact
               </Link>
