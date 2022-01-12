@@ -1,9 +1,10 @@
 import React from "react";
 
-const Logo = ({ className }) => (
+const Logo = ({ className, ...props }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     className={className}
+    {...props}
     id="svg5"
     width="1570.675"
     height="204.352"
