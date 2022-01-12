@@ -203,10 +203,6 @@ a {
   animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
 }
 
-#star {
-  animation: rotation 2s infinite linear;
-}
-
 /**************
   Keyframes
 ***************/
