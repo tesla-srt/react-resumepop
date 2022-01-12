@@ -1,9 +1,6 @@
 import React, { Component } from "react";
-//import {TransformMotion } from "react-motion";
-//import logo from "../logo.svg";
-import { ReactSVG } from "react-svg";
 import { Link, animateScroll as scroll } from "react-scroll";
-import Logo from "Components/Logo";
+import Logo from "./Logo";
 
 export default class Navbar extends Component {
   scrollToTop = () => {
@@ -14,12 +11,7 @@ export default class Navbar extends Component {
     return (
       <nav className="nav" id="navbar">
         <div className="nav-content">
-          <Logo className="img-fluid w-40" />
-          {/*<img
-            src="https://cdn.glitch.me/dad08474-c765-4bb4-a862-08c6e5f18652/resumepop.min.svg"
-            className="nav-logo"
-            onClick={this.scrollToTop}
-          />*/}
+          <Logo className="nav-logo img-fluid" />
           <ul className="nav-items">
             <li className="nav-item">
               <Link
