@@ -1,8 +1,6 @@
 import React, {Component} from "react";
-import {useSpring, Trail, animated} from "react-spring";
 import Container from "react-bootstrap/Container";
 import Card from "react-bootstrap/Card";
-import CardGroup from "react-bootstrap/CardGroup";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Placeholder from "react-bootstrap/Placeholder";

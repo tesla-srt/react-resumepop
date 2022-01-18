@@ -50,9 +50,9 @@ export default class About extends Component {
         <a
           className="btn btn-success"
           target="_blank"
-          href="https://docs.google.com/document/d/1zHXyD09gqOJT4G8v8TJ8Rajb_k9slHqAy81g1EO9atc/view?usp=sharing"
+          href="https://www.linkedin.com/in/renee-elise-piana/"
         >
-          My Resume
+          LinkedIn
         </a>
       </Section>
     );
