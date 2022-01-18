@@ -132,6 +132,10 @@ a {
   padding: 40px;
 }
 
+#section3 {
+  max-width: 1000px;
+}
+
 #hookline {
   list-style-image: url("https://cdn.glitch.me/dad08474-c765-4bb4-a862-08c6e5f18652/star-stroke16x16.svg?v=1640810628108");
   font-family: "Open Sans", sans-serif;

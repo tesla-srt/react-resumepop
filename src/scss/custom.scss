@@ -1,0 +1,15 @@
+/* import only the necessary Bootstrap files */
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+
+$custom-spacers: (
+    6: ($spacer * 6),      //64px
+    7: ($spacer * 6.25),      //80px
+    8: ($spacer * 6.5),   //100px
+    9: ($spacer * 7.0),    //120px
+    10: ($spacer * 9.375)  //150px
+);
+
+$spacers: map-merge($spacers, $custom-spacers);
+
+@import "bootstrap/scss/bootstrap";
