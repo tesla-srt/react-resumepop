@@ -16,7 +16,7 @@ const Logo = ({ className, ...props }) => (
         id="text"
         fill="#333"
         strokeWidth="0.265"
-        ariaLabel="RESUMEP P"
+        aria-label="RESUMEP P"
         style={{}}
         fontFamily="Open Sans"
         fontSize="73.378"
